@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;;
+}
+.main-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #344e30;
+    
+
+}
+.child-container{
+    background-color:#ECE7B4;
+    min-width: 25%;
+    min-height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+figure{
+    margin: 1rem auto;
+}
+
+
+img{
+    width: 50px;
+    margin-left: 1.8rem;
+    
+}
+
+figcaption{
+    font-size: 1.2rem;
+    color: rgb(23, 21, 21);
+    font-weight: 500;
+}
+
+.add-items{
+    margin: 0.3rem auto;
+    position: relative;
+
+}
+
+
+.add-items input{
+    height: 2rem;
+    width: 18rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    color: #32502E;
+    font-weight: 500;
+}
+
+.add-btn{
+    color: green;
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.add-btn:hover{
+    color: #32502E;
+    transform: translateX(-0.3rem);
+    transition: all linear 0.3s;
+    
+}
+
+.show-items{
+
+    display: flex;
+    margin: 0.2rem auto;
+    height: 2rem;
+    width: 18rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #406343;
+
+}
+.show-items:hover{
+    background-color: #32502E;
+    transition: all linear 0.3s;
+
+}
+.show-items i{
+    font-size: 1.4rem;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.show-items h3 {
+    font-size: 15px;
+    text-align: left;
+    color: #fff;
+    margin-left: 10px;
+
+}
+
+.show-items i:hover{
+
+    color: #F3EFCC;
+    transform: translateX(-0.3rem);
+    transition: all linear 0.3s;
+}
+
+
+/*  adding media queries*/
+@media screen and (max-width: 1240px){
+ 
+    .add-items{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
